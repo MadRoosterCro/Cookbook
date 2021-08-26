@@ -12,7 +12,6 @@
  * Edge >= 13 on the desktop, and iOS 10 and Chrome on mobile.
  *
 /**
- * IE11 requires the following for NgClass support on SVG elements
  */
 // import 'classlist.js';  // Run `npm install --save classlist.js`.
 
