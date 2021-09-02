@@ -11,13 +11,7 @@
  * automatically update themselves. This includes Safari >= 10, Chrome >= 55 (including Opera),
  * Edge >= 13 on the desktop, and iOS 10 and Chrome on mobile.
  *
-
-/***************************************************************************************************
- * BROWSER POLYFILLS
- */
-
 /**
- * IE11 requires the following for NgClass support on SVG elements
  */
 // import 'classlist.js';  // Run `npm install --save classlist.js`.
 
@@ -55,9 +49,11 @@
 /***************************************************************************************************
  * Zone JS is required by default for Angular itself.
  */
-import 'zone.js';  // Included with Angular CLI.
+ import 'zone.js';  // Included with Angular CLI.
 
 
-/***************************************************************************************************
- * APPLICATION IMPORTS
- */
+ /***************************************************************************************************
+  * APPLICATION IMPORTS
+  */
+ // Custom Elements polyfill. Required for browsers that do not natively support Custom Elements.
+ import '@webcomponents/custom-elements';
